@@ -32,7 +32,7 @@ const Home: NextPage = () => {
           <div className='h-full flex items-center justify-center'>
             <div className='max-w-4xl'>
               <h1 className='text-xl font-thin sm:text-2xl md:text-3xl lg:text-4xl leading-relaxed sm:leading-loose lg:!leading-[76px]'>
-                IN THE <u>GAME</u> FOR OVER THREE YEARS I'VE <i className='not-italic relative inline-block px-2  lg:px-3 highlighted'>DEVELOPED</i> A RANGE OF AMAZING <u>WEB AND MOBILE APPLICATIONS</u> FOR COMPANIES AND SMALL BUSINESSES
+                IN THE <u>GAME</u> FOR OVER THREE YEARS I&apos;VE <i className='not-italic relative inline-block px-2  lg:px-3 highlighted'>DEVELOPED</i> A RANGE OF AMAZING <u>WEB AND MOBILE APPLICATIONS</u> FOR COMPANIES AND SMALL BUSINESSES
               </h1>
             </div>
           </div>
