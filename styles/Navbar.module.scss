@@ -1,0 +1,11 @@
+.dot {
+  background-color: #bbb;
+  background-image: -webkit-linear-gradient(270deg, #fff, #000);
+    background-image: -moz-linear-gradient(270deg, #fff, #000);
+    background-image: -o-linear-gradient(270deg, #fff, #000);
+    background-image: -ms-linear-gradient(270deg, #fff, #000);
+    background-image: linear-gradient(180deg, #fff, #000);
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 14px;
+}
