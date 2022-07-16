@@ -9,9 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "magicmouse.js": "^1.2.1",
     "next": "12.2.2",
     "react": "18.2.0",
+    "react-animated-cursor": "^2.5.1",
     "react-dom": "18.2.0",
     "sass": "^1.53.0"
   },
