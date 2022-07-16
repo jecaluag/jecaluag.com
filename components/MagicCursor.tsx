@@ -1,6 +1,7 @@
 import dynamic from 'next/dynamic';
+import { ComponentType } from 'react';
 
-const AnimatedCursor = dynamic(() => import('react-animated-cursor'), {
+const AnimatedCursor: ComponentType<any> = dynamic(() => import('react-animated-cursor'), {
   ssr: false
 });
 
