@@ -1,12 +1,13 @@
 import styles from '../styles/Container.module.scss'
 
 interface ContainerProps {
-  children: React.ReactNode
+  children: React.ReactNode,
+  zIndex?: number
 }
 
-const Container = ({ children }: ContainerProps): JSX.Element => {
+const Container = ({ zIndex, children }: ContainerProps): JSX.Element => {
   return (
-    <div className={styles.wrapper}>{children}</div>
+    <div className={styles.wrapper} style={{ zIndex: zIndex || 'auto' }}>{children}</div>
   )
 }
 

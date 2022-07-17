@@ -44,6 +44,11 @@
     font-family: HK Grotesk, system-ui, sans-serif;
   }
 
+  u {
+    text-underline-offset: 6px;
+    text-decoration-thickness: 2px;
+  }
+
   .hover-underline {
     display: inline-block;
     position: relative;
@@ -56,7 +61,7 @@
       height: 2px;
       bottom: 0;
       left: 0;
-      background-color: #000;
+      background-color: #fff;
       transform-origin: bottom right;
       transition: transform 0.25s ease-out;
     }
@@ -97,6 +102,16 @@
       left: 0;
       width: 100%;
       z-index: -1;
+    }
+  }
+
+  .inline-image-wrapper {
+    display: inline-block;
+    span:first-of-type {
+      vertical-align: bottom;
+    }
+    span > span {
+      display: none !important;
     }
   }
 }
