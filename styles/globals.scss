@@ -3,6 +3,20 @@
 @tailwind utilities;
 
 @font-face {
+  font-family: 'Cangste';
+  src: url('../assets/fonts/Cangste/Cangste.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gallient';
+  src: url('../assets/fonts/Gallient/Gallient.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Monument Extended';
   src: url('../assets/fonts/MonumentExtended/MonumentExtended-Regular.otf') format('opentype');
   font-weight: 400;
@@ -81,7 +95,7 @@
     }
 
     &__headline {
-      font-size: 8vw;
+      font-size: 13vw;
     }
   }
 
@@ -112,6 +126,36 @@
     }
     span > span {
       display: none !important;
+    }
+  }
+
+  .scroll-to-explore {
+    -webkit-animation: rotating 20s infinite linear;
+    animation: rotating 20s infinite linear;
+    max-width: 96px;
+    mix-blend-mode: difference;
+    opacity: 1;
+    pointer-events: none;
+    -webkit-transform: translate3d(25%,0,0);
+    transform: translate3d(25%,0,0);
+    transition: all .5s cubic-bezier(.55,.28,.49,.74);
+    z-index: 100;
+  }
+
+  @keyframes rotating {
+    from {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
     }
   }
 }

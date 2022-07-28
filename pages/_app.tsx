@@ -8,6 +8,7 @@ import Layout from '../components/Layout'
 import BgGradient from '../components/BgGradient'
 import MagicCursor from '../components/MagicCursor'
 import Noise from '../components/Noise'
+import ScrollToExplore from '../components/ScrollToExplore'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -15,6 +16,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Fonts />
       <MagicCursor />
       <BgGradient />
+      {/* <ScrollToExplore /> */}
       <Noise />
       <Layout>
         <Component {...pageProps} />

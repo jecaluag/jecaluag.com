@@ -12,6 +12,8 @@ module.exports = {
     extend: {
       fontFamily: {
         monument: ["Monument Extended", ...defaultTheme.fontFamily.sans],
+        cangste: ["Cangste", ...defaultTheme.fontFamily.sans],
+        gallient: ["Gallient", ...defaultTheme.fontFamily.sans],
       },
     },
     fontFamily: {
