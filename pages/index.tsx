@@ -15,7 +15,7 @@ interface InlineImageProps {
 
 const InlineImage = ({ image }: InlineImageProps): JSX.Element => (
   <div className='inline-image-wrapper'>
-    <Image src={image} width="100%" height="100%" className="align-middle !relative !w-auto !h-9 md:!h-14 lg:!h-[70px] !min-h-[auto]" />
+    <Image src={image} alt="inline-image" width="100%" height="100%" className="align-middle !relative !w-auto !h-9 md:!h-14 lg:!h-[70px] !min-h-[auto]" />
   </div>
 )
 
