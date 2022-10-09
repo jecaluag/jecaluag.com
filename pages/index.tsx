@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Image from 'next/image'
+import { motion } from "framer-motion"
 
 import Pic from '../assets/images/profile.png'
 
@@ -17,8 +18,18 @@ const Home: NextPage = () => {
         </div>
       </section> 
       <section className='mb-14'>
-        <h2 className='text-white mb-2'>About</h2>
-        <p>Hello I'm Erniemar. A Front End Developer based in Philippines. I specialize in creating interactive interfaces, building complex systems and providing reliable, optimized, and secure solutions for user-facing applications.</p>
+        {/* <h2 className='text-white mb-2'>About</h2> */}
+        <div className='relative w-full h-auto'>
+          <motion.div
+            whileHover={{ rotate: 28 }}
+            whileTap={{ scale: 1.5 }}
+            transition={{ type: "spring" }}
+            className='absolute text-3xl mb-1 -top-12 cursor-default select-none'
+          >
+            <span>👋</span>
+          </motion.div>
+        </div>
+        <p className="mt-20">Hello, I'm Erniemar. A Front End Developer based in the Philippines. I specialize in creating interactive interfaces, building complex systems and providing reliable, optimized, and secure solutions for user-facing applications.</p>
       </section>
       <section className='mb-14'>
         <h2 className='text-white mb-10'>Work Experience</h2>
