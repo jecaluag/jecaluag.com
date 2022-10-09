@@ -6,10 +6,10 @@ import Pic from '../assets/images/profile.png'
 
 const Home: NextPage = () => {
   return (
-    <div className='text-neutral-400 py-28 max-w-lg m-auto px-4'>
-      <section className='grid-item mb-10 items-center'>
+    <div className='text-neutral-400 py-24 md:py-28 max-w-lg m-auto px-4'>
+      <section className='grid-item gap-5 md:gap-6 mb-10 items-center'>
         <div className='col-span-1'>
-          <Image src={Pic} alt="Erniemar Caluag" className='w-full rounded-full' />
+          <Image src={Pic} alt="Erniemar Caluag" className='!w-[30%] lg:!w-full rounded-full' />
         </div>
         <div className='col-span-3'>
           <h1 className='text-white text-xl'>John Erniemar Caluag</h1>

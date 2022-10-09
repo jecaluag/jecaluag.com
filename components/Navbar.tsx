@@ -8,7 +8,7 @@ import Container from './Container'
 function getRelativeCoordinates(event: any, referenceElement: any) {
   const position = {
     x: event.pageX,
-    y: event.pageY
+    y: event.pageY - window.pageYOffset
   };
 
   const offset = {
@@ -40,7 +40,7 @@ function getRelativeCoordinates(event: any, referenceElement: any) {
   };
 }
 
-const INITIAL_POSITION = { x: 40, y: 40, rotate: 0 }
+const INITIAL_POSITION = { x: 12, y: 60, rotate: 0 }
 
 const Navbar = (): JSX.Element => {
   const [mousePosition, setMousePosition] = useState<any>(INITIAL_POSITION);
@@ -51,17 +51,17 @@ const Navbar = (): JSX.Element => {
   }
 
   return (
-    <header className="fixed w-full z-10 mix-blend-difference" >
+    <header className="fixed w-full z-10 mix-blend-difference h-16 md:h-auto">
       <Container>
         <motion.div
           ref={boxRef}
           onMouseMove={e => handleMouseMove(e)}
-          onMouseLeave={e => setMousePosition({ x: 40, y: 40, rotate: 0 })}
+          onMouseLeave={() => setMousePosition(INITIAL_POSITION)}
           animate={{
             rotateX: mousePosition.centerX * 20,
             rotateY: mousePosition.centerY * 20
           }}
-          className="relative max-w-md py-6 md:py-10"
+          className="relative max-w-md h-full py-6 md:py-10"
         >
           <motion.div
             initial={INITIAL_POSITION}
