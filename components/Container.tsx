@@ -13,6 +13,8 @@ const Container = forwardRef(({ zIndex, children, ...props }: ContainerProps, re
   )
 })
 
+Container.displayName = 'Container'
+
 // const Container = ({ zIndex, children }: ContainerProps): JSX.Element => {
 //   return (
 //     <div className={styles.wrapper} style={{ zIndex: zIndex || 'auto' }}>{children}</div>

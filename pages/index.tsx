@@ -29,7 +29,7 @@ const Home: NextPage = () => {
             <span>👋</span>
           </motion.div>
         </div>
-        <p className="mt-20">Hello, I'm Erniemar. A Front End Developer based in the Philippines. I specialize in creating interactive interfaces, building complex systems and providing reliable, optimized, and secure solutions for user-facing applications.</p>
+        <p className="mt-20">Hello, I&apos;m Erniemar. A Front End Developer based in the Philippines. I specialize in creating interactive interfaces, building complex systems and providing reliable, optimized, and secure solutions for user-facing applications.</p>
       </section>
       <section className='mb-14'>
         <h2 className='text-white mb-10'>Work Experience</h2>
@@ -39,7 +39,7 @@ const Home: NextPage = () => {
               <p>2022 - Present</p>
             </div>
             <div className='col-span-4 sm:col-span-3'>
-              <a href="https://intervenn.bio/" target="_blank" className='text-white flex items-center'>
+              <a href="https://intervenn.bio/" target="_blank" rel="noreferrer" className='text-white flex items-center'>
                 Software Engineer – InterVenn Biosciences
                 <svg className='w-4 h-4 ml-2' viewBox="0 0 24 24">
                   <path fill="currentColor" d="M5,17.59L15.59,7H9V5H19V15H17V8.41L6.41,19L5,17.59Z" />
@@ -54,7 +54,7 @@ const Home: NextPage = () => {
               <p>2021 - 2022</p>
             </div>
             <div className='col-span-4 sm:col-span-3'>
-              <a href="https://yondu.com/" target="_blank" className='text-white flex items-center'>
+              <a href="https://yondu.com/" target="_blank" rel="noreferrer"  className='text-white flex items-center'>
                 Software Engineer (Front End) – Yondu
                 <svg className='w-4 h-4 ml-2' viewBox="0 0 24 24">
                   <path fill="currentColor" d="M5,17.59L15.59,7H9V5H19V15H17V8.41L6.41,19L5,17.59Z" />
@@ -69,7 +69,7 @@ const Home: NextPage = () => {
               <p>2019 - 2021</p>
             </div>
             <div className='col-span-4 sm:col-span-3'>
-              <a href="https://www.cafe24.com/en/" target="_blank" className='text-white flex items-center'>
+              <a href="https://www.cafe24.com/en/" target="_blank" rel="noreferrer"  className='text-white flex items-center'>
                 Full Stack Developer – Cafe24
                 <svg className='w-4 h-4 ml-2' viewBox="0 0 24 24">
                   <path fill="currentColor" d="M5,17.59L15.59,7H9V5H19V15H17V8.41L6.41,19L5,17.59Z" />
@@ -142,7 +142,7 @@ const Home: NextPage = () => {
               <p>Mail</p>
             </div>
             <div className='col-span-4 sm:col-span-3'>
-              <a href="mailto:hello@jecaluag.com" target="_blank" className='text-white flex items-center'>
+              <a href="mailto:hello@jecaluag.com" target="_blank" rel="noreferrer"  className='text-white flex items-center'>
                 hello@jecaluag.com
                 <svg className='w-4 h-4 ml-2' viewBox="0 0 24 24">
                   <path fill="currentColor" d="M5,17.59L15.59,7H9V5H19V15H17V8.41L6.41,19L5,17.59Z" />
@@ -155,7 +155,7 @@ const Home: NextPage = () => {
               <p>Linkedin</p>
             </div>
             <div className='col-span-4 sm:col-span-3'>
-              <a href="https://www.linkedin.com/in/jecaluag/" target="_blank" className='text-white flex items-center'>
+              <a href="https://www.linkedin.com/in/jecaluag/" target="_blank" rel="noreferrer"  className='text-white flex items-center'>
                 in/jecaluag
                 <svg className='w-4 h-4 ml-2' viewBox="0 0 24 24">
                   <path fill="currentColor" d="M5,17.59L15.59,7H9V5H19V15H17V8.41L6.41,19L5,17.59Z" />
@@ -168,7 +168,7 @@ const Home: NextPage = () => {
               <p>Github</p>
             </div>
             <div className='col-span-4 sm:col-span-3'>
-              <a href="https://github.com/jecaluag/" target="_blank" className='text-white flex items-center'>
+              <a href="https://github.com/jecaluag/" target="_blank" rel="noreferrer"  className='text-white flex items-center'>
                 @jecaluag
                 <svg className='w-4 h-4 ml-2' viewBox="0 0 24 24">
                   <path fill="currentColor" d="M5,17.59L15.59,7H9V5H19V15H17V8.41L6.41,19L5,17.59Z" />
