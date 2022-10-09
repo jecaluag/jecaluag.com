@@ -1,5 +1,5 @@
 import Head from "next/head"
-import Navbar from "./Navbar"
+import Navbar from './Navbar'
 
 interface LayoutProps {
   children: React.ReactNode
@@ -7,7 +7,7 @@ interface LayoutProps {
 
 const Layout = ({ children }: LayoutProps): JSX.Element => {
   return (
-    <main className="relative">
+    <main className="relative bg-[#1F1F1F]">
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Erniemar's homepage" />

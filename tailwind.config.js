@@ -11,13 +11,11 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        monument: ["Monument Extended", ...defaultTheme.fontFamily.sans],
-        cangste: ["Cangste", ...defaultTheme.fontFamily.sans],
-        gallient: ["Gallient", ...defaultTheme.fontFamily.sans],
+        inter: ["Inter", ...defaultTheme.fontFamily.sans],
       },
     },
     fontFamily: {
-      sans: ["HK Grotesk", ...defaultTheme.fontFamily.sans],
+      sans: ["Inter", ...defaultTheme.fontFamily.sans],
     },
   },
   plugins: [],

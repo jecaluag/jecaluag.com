@@ -1,122 +1,173 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image, { StaticImageData } from 'next/image'
+import Image from 'next/image'
 
-import Container from '../components/Container'
-import InlineImageOne from '../public/images/950d-f4e9ad662fb5.png'
-import InlineImageTwo from '../public/images/4a43d156b27c.png'
-import AmazingSvg from '../components/AmazingSvg'
-import StarBullet from '../components/StarBullet'
-import Link from 'next/link'
-
-interface InlineImageProps {
-  image: StaticImageData
-}
-
-const InlineImage = ({ image }: InlineImageProps): JSX.Element => (
-  <div className='inline-image-wrapper'>
-    <Image src={image} alt="inline-image" width="100%" height="100%" className="align-middle !relative !w-auto !h-9 md:!h-14 lg:!h-[70px] !min-h-[auto]" />
-  </div>
-)
-
-const spacingHeight = 'h-[26vh] sm:h-[31vh] md:h-[35vh]'
+import Pic from '../assets/images/profile.png'
 
 const Home: NextPage = () => {
   return (
-    <>
-      <section className="w-full">
-        <div className={`hero__space h-[26vh] sm:h-[38vh] md:h-[30vh]`} />
-        <Container>
-          <div className='h-full flex flex-col justify-center px-3 md:px-0'>
-            <div className='block w-full ml-0 sm:ml-4 md:ml-8 text-left overflow-hidden align-top mb-2 md:mb-5'>
-              <span className='uppercase text-xs sm:text-sm md:text-lg tracking-widest leading-normal'>
-                Portfolio of Erniemar Caluag &nbsp;&nbsp;&nbsp;
-              </span>
-              <span className='reveal-line w-12 sm:w-16 md:w-20 mb-1 pl-2'></span>
-            </div>
-            {/* text-[#0d1b1e] */}
-            <div className='px-0 md:px-10'>
-              <h1 className='w-full font-gallient font-medium uppercase text-[13vw] md:text-[9vw] tracking-[4px] leading-snug md:leading-[1.2] text-[#042a2b]'> 
-                <span className='overflow-hidden block text-right'>Front-end</span>
-                <span className='overflow-hidden block -mt-1 lg:-mt-3'>Software</span>
-                <span className='overflow-hidden block -mt-1 lg:-mt-3 text-right'>Engineer</span>
-              </h1>
-            </div>
-          </div>
-        </Container>
+    <div className='text-neutral-400 py-28 max-w-lg m-auto px-4'>
+      <section className='grid-item mb-10 items-center'>
+        <div className='col-span-1'>
+          <Image src={Pic} alt="Erniemar Caluag" className='w-full rounded-full' />
+        </div>
+        <div className='col-span-3'>
+          <h1 className='text-white text-xl'>John Erniemar Caluag</h1>
+          <p>Front End Software Engineer</p>
+          <a href='mailto:hello@jecaluag.com' className='text-neutral-500 underline-offset-3 hover:underline'>hello@jecaluag.com</a>
+        </div>
+      </section> 
+      <section className='mb-14'>
+        <h2 className='text-white mb-2'>About</h2>
+        <p>Hello I'm Erniemar. A Front End Developer based in Philippines. I specialize in creating interactive interfaces, building complex systems and providing reliable, optimized, and secure solutions for user-facing applications.</p>
       </section>
-      <section className="w-full">
-        <div className={`hero__space ${spacingHeight}`} />
-        <Container zIndex={1}>
-          <div className='h-full flex items-center justify-center'>
-            <div className='max-w-4xl mix-blend-screen px-2 sm:px-0'>
-              <h1 className='text-[24px] text-[#042a2b] font-thin sm:text-2xl md:text-3xl lg:text-[38px] leading-[1.75] sm:!leading-loose lg:!leading-[76px]'>
-                IN THE <u>GAME</u> <InlineImage image={InlineImageOne} /> FOR OVER THREE YEARS I&apos;VE <i className='not-italic relative inline-block px-2 lg:px-3 highlighted'>DEVELOPED</i> A RANGE OF AMAZING <AmazingSvg /> <u>WEB AND MOBILE</u> APPLICATIONS <InlineImage image={InlineImageTwo} /> FOR COMPANIES AND SMALL BUSINESSES
-              </h1>
+      <section className='mb-14'>
+        <h2 className='text-white mb-10'>Work Experience</h2>
+        <div>
+          <div className='grid-item mb-10'>
+            <div className='col-span-4 sm:col-span-1'>
+              <p>2022 - Present</p>
             </div>
-          </div>
-        </Container>
-      </section>
-      <section className="w-full">
-        <div className={`hero__space ${spacingHeight}`} />
-        <Container>
-          <div className='h-full flex flex-col justify-center px-3 md:px-0'>
-            <div className='px-0 md:px-10'>
-              <h1 className='w-full font-gallient uppercase font-normal leading-snug text-[13vw] text-[#042a2b]'> 
-                <span className='overflow-hidden block -mt-1 lg:-mt-3'>Selected</span>
-                <span className='overflow-hidden block -mt-1 lg:-mt-3 text-right'>Project</span>
-              </h1>
+            <div className='col-span-4 sm:col-span-3'>
+              <a href="https://intervenn.bio/" target="_blank" className='text-white flex items-center'>
+                Software Engineer – InterVenn Biosciences
+                <svg className='w-4 h-4 ml-2' viewBox="0 0 24 24">
+                  <path fill="currentColor" d="M5,17.59L15.59,7H9V5H19V15H17V8.41L6.41,19L5,17.59Z" />
+                </svg>
+              </a>
+              <p className='my-2'>Developed a web application that helps InterVenn facilitate management of controlled document. Created and implemented reusable and optimized components, as well as various hooks and functions. Responsible for the development of most complex task within the project.</p>
+              <p className='text-neutral-500'>React • TypeScript • Redux • Material UI • Emotion • Okta Authentication</p>
             </div>
           </div>
-        </Container>
-      </section>
-      <section className="w-full">
-        <div className={`hero__space ${spacingHeight}`} />
-        <Container zIndex={1}>
-          <div className='h-full flex items-center justify-center'>
-            <div className='max-w-4xl w-full mix-blend-screen px-2 sm:px-0'>
-              <ul className='text-left w-full text-[24px] text-[#042a2b] font-thin sm:text-2xl md:text-3xl lg:text-[38px] leading-[1.75] sm:!leading-loose lg:!leading-[76px]'>
-                <li className='border-b-2 border-[#363636]'>
-                  <Link href="/">
-                    <a className='flex items-center gap-4 sm:gap-6 lg:gap-10 py-4 sm:py-6 lg:py-8'>
-                      <StarBullet />
-                      <span>GP NAPO</span>
-                    </a>
-                  </Link>
-                </li>
-                <li className='border-b-2 border-[#363636]'>
-                  <Link href="/">
-                    <a className='flex items-center gap-4 sm:gap-6 lg:gap-10 py-4 sm:py-6 lg:py-8'>
-                      <StarBullet />
-                      <span>RONAN BLOG</span>
-                    </a>
-                  </Link>
-                </li>
-                <li className='border-b-2 border-[#363636]'>
-                  <Link href="/">
-                    <a className='flex items-center gap-4 sm:gap-6 lg:gap-10 py-4 sm:py-6 lg:py-8'>
-                      <StarBullet />
-                      <span>RXCUE</span>
-                    </a>
-                  </Link>
-                </li>
-                <li className='border-b-2 border-[#363636]'>
-                  <Link href="/">
-                    <a className='flex items-center gap-4 sm:gap-6 lg:gap-10 py-4 sm:py-6 lg:py-8'>
-                      <StarBullet />
-                      <span>BINANCE FUTURES BOT</span>
-                    </a>
-                  </Link>
-                </li>
-              </ul>
+          <div className='grid-item mb-10'>
+            <div className='col-span-4 sm:col-span-1'>
+              <p>2021 - 2022</p>
+            </div>
+            <div className='col-span-4 sm:col-span-3'>
+              <a href="https://yondu.com/" target="_blank" className='text-white flex items-center'>
+                Software Engineer (Front End) – Yondu
+                <svg className='w-4 h-4 ml-2' viewBox="0 0 24 24">
+                  <path fill="currentColor" d="M5,17.59L15.59,7H9V5H19V15H17V8.41L6.41,19L5,17.59Z" />
+                </svg>
+              </a>
+              <p className='my-2'>Worked with Globe Telecom as our client to build multiple blockchain projects. Collaborated closely with the client to meet project requirements, goals, and desired functionality.</p>
+              <p className='text-neutral-500'>React • Material UI • Nuxt • Vuetify</p>
             </div>
           </div>
-        </Container>
+          <div className='grid-item mb-10'>
+            <div className='col-span-4 sm:col-span-1'>
+              <p>2019 - 2021</p>
+            </div>
+            <div className='col-span-4 sm:col-span-3'>
+              <a href="https://www.cafe24.com/en/" target="_blank" className='text-white flex items-center'>
+                Full Stack Developer – Cafe24
+                <svg className='w-4 h-4 ml-2' viewBox="0 0 24 24">
+                  <path fill="currentColor" d="M5,17.59L15.59,7H9V5H19V15H17V8.41L6.41,19L5,17.59Z" />
+                </svg>
+              </a>
+              <p className='my-2'>Collaborate with a team in developing multiple companies internal projects. Developed responsive and cross-browser compatible web applications. Build back-end API endpoints.</p>
+              <p className='text-neutral-500'>Nuxt • TypeScript • Tailwind • GraphQL • Flask</p>
+            </div>
+          </div>
+        </div>
       </section>
-      <section className="w-full">
-        <div className={`hero__space ${spacingHeight}`} />
+      <section className='mb-14'>
+        <h2 className='text-white mb-10'>Side Projects</h2>
+        <div>
+          <div className='grid-item mb-10'>
+            <div className='col-span-4 sm:col-span-1'>
+              <p>2022</p>
+            </div>
+            <div className='col-span-4 sm:col-span-3'>
+              <p className='text-white flex items-center'>
+                Ronan Blog
+              </p>
+              <p className='my-2'>An internal company blog site where employees can share their knowledge and expertise in a way that invites collaborations.</p>
+              <p className='text-neutral-500'>Micro Front End • Webpack Module Federation • React • TypeScript • Redux • Tailwind</p>
+            </div>
+          </div>
+          <div className='grid-item mb-10'>
+            <div className='col-span-4 sm:col-span-1'>
+              <p>2022</p>
+            </div>
+            <div className='col-span-4 sm:col-span-3'>
+              <p className='text-white flex items-center'>
+                RxCue Pharmacy Website and Mobile App
+              </p>
+              <p className='my-2'>Allow users to check for drug interactions and drug availability at a specific drugstore branch.</p>
+              <p className='text-neutral-500'>React • React Native • Chakra UI • Native Base</p>
+            </div>
+          </div>
+          <div className='grid-item mb-10'>
+            <div className='col-span-4 sm:col-span-1'>
+              <p>2021</p>
+            </div>
+            <div className='col-span-4 sm:col-span-3'>
+              <p className='text-white flex items-center'>
+                AE Pumpbot
+              </p>
+              <p className='my-2'>A futures trading desktop app for Binance users that allows them to pre-configure their position size and stop loss, as well as open a long or short position with a single click. Eliminating the hassle and inconvinience of searching for the coin and manually entering their order details on every single trade.</p>
+              <p className='text-neutral-500'>Electron • Vue • Tailwind • Binance API</p>
+            </div>
+          </div>
+          <div className='grid-item mb-10'>
+            <div className='col-span-4 sm:col-span-1'>
+              <p>2021</p>
+            </div>
+            <div className='col-span-4 sm:col-span-3'>
+              <p className='text-white flex items-center'>
+                ETH Transaction Alert
+              </p>
+              <p className='my-2'>A discord bot that will send an alert message for a new transaction that occurred on an Ethereum wallet address.</p>
+              <p className='text-neutral-500'>Node.js • Discord.js • MonggoDB</p>
+            </div>
+          </div>
+        </div>
       </section>
-    </>
+      <section className='mb-14'>
+        <h2 className='text-white mb-10'>Links</h2>
+        <div>
+          <div className='grid-item mb-4'>
+            <div className='col-span-4 sm:col-span-1'>
+              <p>Mail</p>
+            </div>
+            <div className='col-span-4 sm:col-span-3'>
+              <a href="mailto:hello@jecaluag.com" target="_blank" className='text-white flex items-center'>
+                hello@jecaluag.com
+                <svg className='w-4 h-4 ml-2' viewBox="0 0 24 24">
+                  <path fill="currentColor" d="M5,17.59L15.59,7H9V5H19V15H17V8.41L6.41,19L5,17.59Z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div className='grid-item mb-4'>
+            <div className='col-span-4 sm:col-span-1'>
+              <p>Linkedin</p>
+            </div>
+            <div className='col-span-4 sm:col-span-3'>
+              <a href="https://www.linkedin.com/in/jecaluag/" target="_blank" className='text-white flex items-center'>
+                in/jecaluag
+                <svg className='w-4 h-4 ml-2' viewBox="0 0 24 24">
+                  <path fill="currentColor" d="M5,17.59L15.59,7H9V5H19V15H17V8.41L6.41,19L5,17.59Z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div className='grid-item mb-4'>
+            <div className='col-span-4 sm:col-span-1'>
+              <p>Github</p>
+            </div>
+            <div className='col-span-4 sm:col-span-3'>
+              <a href="https://github.com/jecaluag/" target="_blank" className='text-white flex items-center'>
+                @jecaluag
+                <svg className='w-4 h-4 ml-2' viewBox="0 0 24 24">
+                  <path fill="currentColor" d="M5,17.59L15.59,7H9V5H19V15H17V8.41L6.41,19L5,17.59Z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
   )
 }
 
