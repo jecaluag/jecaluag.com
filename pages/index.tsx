@@ -152,7 +152,7 @@ const Home: NextPage = () => {
           </div>
           <div className='grid-item mb-4'>
             <div className='col-span-4 sm:col-span-1'>
-              <p>Linkedin</p>
+              <p>LinkedIn</p>
             </div>
             <div className='col-span-4 sm:col-span-3'>
               <a href="https://www.linkedin.com/in/jecaluag/" target="_blank" rel="noreferrer"  className='text-white flex items-center'>
