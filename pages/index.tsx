@@ -70,12 +70,12 @@ const Home: NextPage = () => {
             </div>
             <div className='col-span-4 sm:col-span-3'>
               <a href="https://www.cafe24.com/en/" target="_blank" rel="noreferrer"  className='text-white flex items-center'>
-                Full Stack Developer – Cafe24
+                Full Stack Web Developer – Cafe24
                 <svg className='w-4 h-4 ml-2' viewBox="0 0 24 24">
                   <path fill="currentColor" d="M5,17.59L15.59,7H9V5H19V15H17V8.41L6.41,19L5,17.59Z" />
                 </svg>
               </a>
-              <p className='my-2'>Collaborate with a team in developing multiple companies internal projects. Developed responsive and cross-browser compatible web applications. Build back-end API endpoints.</p>
+              <p className='my-2'>Collaborate with a team in developing multiple internal company projects. Developed responsive and cross-browser compatible web applications. Build back-end API endpoints.</p>
               <p className='text-neutral-500'>Nuxt • TypeScript • Tailwind • GraphQL • Flask</p>
             </div>
           </div>
@@ -93,7 +93,7 @@ const Home: NextPage = () => {
                 Ronan Blog
               </p>
               <p className='my-2'>An internal company blog site where employees can share their knowledge and expertise in a way that invites collaborations.</p>
-              <p className='text-neutral-500'>Micro Front End • Webpack Module Federation • React • TypeScript • Redux • Tailwind</p>
+              <p className='text-neutral-500'>Micro Front End • Webpack Module Federation • React • TypeScript • Redux • Tailwind • Firebase</p>
             </div>
           </div>
           <div className='grid-item mb-10'>
