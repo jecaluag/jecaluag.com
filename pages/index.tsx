@@ -104,7 +104,7 @@ const Home: NextPage = () => {
               <p className='text-white flex items-center'>
                 RxCue Pharmacy Website and Mobile App
               </p>
-              <p className='my-2'>Allow users to check for drug interactions and drug availability at a specific drugstore branch.</p>
+              <p className='my-2'>Allow RXCue pharmacists and users to check for drug interactions, purchase history, and drug availability at a specific drugstore branch.</p>
               <p className='text-neutral-500'>React • React Native • Redux • Chakra UI • Native Base</p>
             </div>
           </div>
