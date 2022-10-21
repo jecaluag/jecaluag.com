@@ -29,7 +29,7 @@ const Home: NextPage = () => {
             <span>👋</span>
           </motion.div>
         </div>
-        <p className="mt-20">Hello, I&apos;m Erniemar. A Front End Developer based in the Philippines. I specialize in creating interactive interfaces, building complex systems and providing reliable, optimized, and secure solutions for user-facing applications.</p>
+        <p className="mt-20">Hello, I&apos;m Erniemar. A Front End Engineer based in the Philippines. I specialize in creating interactive interfaces, building complex systems and providing reliable, optimized, and secure solutions for user-facing applications.</p>
       </section>
       <section className='mb-14'>
         <h2 className='text-white mb-10'>Work Experience</h2>
