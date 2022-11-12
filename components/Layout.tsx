@@ -7,7 +7,7 @@ interface LayoutProps {
 
 const Layout = ({ children }: LayoutProps): JSX.Element => {
   return (
-    <main className="relative bg-neutral-900">
+    <main className="relative bg-black">
       {/* bg-[#1F1F1F] bg-neutral-900 */}
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
