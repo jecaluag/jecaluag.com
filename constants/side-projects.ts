@@ -15,7 +15,7 @@ export const sideProjects: ItemData[] = [
     description:
       "Allow RXCue pharmacists and users to check for drug interactions, purchase history, and drug availability at a specific drugstore branch.",
     textStack:
-      "React • React Native • Redux • Chakra UI • Native Base",
+      "React • React Native • TypeScript • Redux • Chakra UI • Native Base",
   },
   {
     leftText: "2021",
@@ -31,6 +31,6 @@ export const sideProjects: ItemData[] = [
     description:
       "A discord bot that will send an alert message for a new transaction that occurred on an Ethereum wallet address.",
     textStack:
-      "Node.js • Discord.js • MonggoDB",
+      "Node.js • TypeScript • Discord.js • MonggoDB",
   },
 ];

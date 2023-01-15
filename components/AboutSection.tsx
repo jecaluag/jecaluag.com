@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from "framer-motion"
-import { aboutDetails } from '../data/about'
+import { aboutDetails } from '../constants/about'
 
 const About = () => {
   return (

@@ -1,65 +1,30 @@
-import { useRef, useState } from "react"
+import { type Ref, useRef, useState } from "react"
 import { motion } from "framer-motion"
-
 
 import styles from '../styles/Navbar.module.scss'
 import Container from './Container'
-
-function getRelativeCoordinates(event: any, referenceElement: any) {
-  const position = {
-    x: event.pageX,
-    y: event.pageY - window.pageYOffset
-  };
-
-  const offset = {
-    left: referenceElement.offsetLeft,
-    top: referenceElement.offsetTop,
-    width: referenceElement.clientWidth,
-    height: referenceElement.clientHeight
-  };
-
-  let reference = referenceElement.offsetParent;
-
-  while (reference) {
-    offset.left += reference.offsetLeft;
-    offset.top += reference.offsetTop;
-    reference = reference.offsetParent;
-  }
-
-  const x = position.x - offset.left
-  const y = position.y - offset.top
-
-  return {
-    x,
-    y,
-    rotate: (x + y) / 5,
-    width: offset.width,
-    height: offset.height,
-    centerX: (position.x - offset.left - offset.width / 2) / (offset.width / 2),
-    centerY: (position.y - offset.top - offset.height / 2) / (offset.height / 2)
-  };
-}
+import getRelativeCoordinates, { type Position } from "../utils/getRelativeCoordinates"
 
 const INITIAL_POSITION = { x: 12, y: 60, rotate: 0 }
 
 const Navbar = (): JSX.Element => {
-  const [mousePosition, setMousePosition] = useState<any>(INITIAL_POSITION);
-  const boxRef = useRef<any>(null)
+  const [mousePosition, setMousePosition] = useState<Position>(INITIAL_POSITION);
+  const boxRef = useRef(null)
 
   const handleMouseMove = (e: any) => {
     setMousePosition(getRelativeCoordinates(e, boxRef.current));
   }
 
   return (
-    <header className="fixed w-full z-10 mix-blend-difference h-16 md:h-auto">
+    <header className="fixed w-full z-10 h-16 md:h-auto bg-gradient-to-b from-black to-transparent">
       <Container>
         <motion.div
           ref={boxRef}
           onMouseMove={e => handleMouseMove(e)}
           onMouseLeave={() => setMousePosition(INITIAL_POSITION)}
           animate={{
-            rotateX: mousePosition.centerX * 20,
-            rotateY: mousePosition.centerY * 20
+            rotateX: mousePosition.centerX || 0 * 20,
+            rotateY: mousePosition.centerY || 0 * 20
           }}
           className="relative max-w-md h-full py-6 md:py-10"
         >
@@ -70,7 +35,7 @@ const Navbar = (): JSX.Element => {
               y: mousePosition.y,
               rotate: mousePosition.rotate
             }}
-            className={`${styles.dot} absolute h-8 w-8 mix-blend-normal outline-none select-none`}
+            className={`${styles.dot} absolute h-8 w-8 outline-none select-none`}
           />
         </motion.div>
       </Container>

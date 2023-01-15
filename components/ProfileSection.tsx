@@ -2,7 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 
 import Pic from '../assets/images/profile.png'
-import { profileDetails } from '../data'
+import { profileDetails } from '../constants'
 
 const ProfileSection = () => {
   return (

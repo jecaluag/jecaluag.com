@@ -36,6 +36,8 @@ const Layout = ({ children }: LayoutProps): JSX.Element => {
       <Navbar />
 
       {children}
+
+      <footer className="fixed bottom-0 h-16 w-full bg-gradient-to-t from-black to-transparent" />
     </main>
   )
 }

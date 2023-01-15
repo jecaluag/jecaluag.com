@@ -2,6 +2,6 @@ $gutter-size:  2.5vw;
 
 .wrapper {
   position: relative;
-  margin: 0 calc($gutter-size * 2);
+  padding: 0 calc($gutter-size * 2);
   height: 100%;
 }

@@ -3,7 +3,7 @@ import type { NextPage } from 'next'
 import GridSection from '../components/GridSection'
 import AboutSection from '../components/AboutSection'
 import ProfileSection from '../components/ProfileSection'
-import { links, sideProjects, workExp } from '../data'
+import { links, sideProjects, workExp } from '../constants'
 
 const Home: NextPage = () => {
   return (

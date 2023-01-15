@@ -7,18 +7,19 @@ interface ContainerProps {
   [key: string]: any
 }
 
-const Container = forwardRef(({ zIndex, children, ...props }: ContainerProps, ref: any) => {
+const Container = forwardRef(({ zIndex, children, className, ...props }: ContainerProps, ref: any) => {
   return (
-    <div ref={ref} className={styles.wrapper} style={{ zIndex: zIndex || 'auto' }} {...props}>{children}</div>
+    <div
+      ref={ref}
+      className={`${styles.wrapper} ${className}`}
+      style={{ zIndex: zIndex || 'auto' }} 
+      {...props}
+    >
+      {children}
+    </div>
   )
 })
 
 Container.displayName = 'Container'
-
-// const Container = ({ zIndex, children }: ContainerProps): JSX.Element => {
-//   return (
-//     <div className={styles.wrapper} style={{ zIndex: zIndex || 'auto' }}>{children}</div>
-//   )
-// }
 
 export default Container
