@@ -1,4 +1,5 @@
 import type { AppProps } from 'next/app'
+import { Analytics } from '@vercel/analytics/react';
 
 import '../styles/globals.scss'
 import Fonts from '../components/Fonts'
@@ -11,6 +12,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Layout>
         <Component {...pageProps} />
       </Layout>
+      <Analytics />
     </>
   )
 }
