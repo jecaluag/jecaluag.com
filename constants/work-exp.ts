@@ -6,7 +6,7 @@ export const workExp: ItemData[] = [
     title: "Freelance Front-end Developer",
     description: [
       "As a freelance Front-End Developer, I had the privilege of working with a Swiss company leading the renewable energy transition. Their B2B SaaS software streamlines sales and consultation for decentralized energy systems, reshaping the sector.",
-      "I actively contribute to the resolution of critical bugs across multiple SaaS applications and drive the development of new features. Additionally, I am leading the migration effort for their flagship project, transitioning it from Vue 2 to Vite and Vue 3 to enhance its performance and scalability.",
+      "I actively contribute to the resolution of critical bugs across multiple SaaS applications and drive the development of new features. Additionally, I am leading the migration effort for their flagship application, transitioning it from Vue 2 to Vite and Vue 3 to enhance its performance and scalability.",
     ],
     textStack: "Vue 3 • Vite • Vuex • Three.js • Leaflet • Element Plus",
   },
