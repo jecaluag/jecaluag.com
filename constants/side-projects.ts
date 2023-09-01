@@ -19,7 +19,7 @@ export const sideProjects: ItemData[] = [
   },
   {
     leftText: "2021",
-    title: "AE Pumpbot",
+    title: "AE Cryptobot",
     description:
       "A futures trading desktop app for Binance users that allows them to pre-configure their position size and stop loss, as well as open a long or short position with a single click. Eliminating the hassle and inconvinience of searching for the coin and manually entering their order details on every single trade.",
     textStack:
